@@ -377,6 +377,7 @@ mark.piscar{outline:3px solid var(--ouro2)}
   .cartao{padding:15px}
 }
 </style>
+<script src="porteiro.js" data-app="Próprio Punho" data-protege="https://promptflow-ia.eneaspr.workers.dev"></script>
 </head>
 <body>
 
@@ -385,7 +386,7 @@ mark.piscar{outline:3px solid var(--ouro2)}
      ============================================================ -->
 <script>
 const CONFIG = {
-  VERSAO: "1.0.0",
+  VERSAO: "1.1.0",
 
   // Hash SHA-256 do PIN (o mesmo do PromptFlow). Padrão: 1010
   PIN_HASH: "7a5df5ffa0dec2228d90b8d0a0f1b0767b748b0a41314c123075b8289e4e053f",
@@ -636,6 +637,7 @@ const CONFIG = {
         <button class="btn" id="ajAtualizar">Atualizar app</button>
         <button class="btn" id="ajVerificar">Procurar versão nova</button>
         <button class="btn" id="ajBloquear">Bloquear (pedir PIN)</button>
+        <button class="btn" onclick="porteiroSair()">Sair da conta</button>
       </div>
     </div>
     <div class="grupo">
